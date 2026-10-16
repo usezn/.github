@@ -10,7 +10,7 @@ npx -y zn-gate init
 
 - **Scrubber**: keeps secret values (API keys, tokens, private keys, database passwords) out of what your agent sends to its model.
 - **Galvanize**: checks what your agent reads and calls for prompt injection with a local rules engine; prompts can also go to the Galvanize 2 cloud classifier, only if you turn it on.
-- **Scan**: audits prompt templates, `AGENTS.md` / `SKILL.md` files and configs for injection traps and leaked secrets.
+- **Scan**: checks MCP servers, prompt templates and agent config files (`AGENTS.md`, `SKILL.md`) for injection traps and leaked secrets.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/usezn/zn/main/docs/diagrams/data-flow-dark.svg">
